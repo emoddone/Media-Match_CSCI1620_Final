@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="enabled">
+   <bool>false</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>515</width>
+    <height>715</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>515</width>
+    <height>715</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>515</width>
+    <height>715</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Media Match</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="selectMedia">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>491</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Select one media you already like:</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="1" column="0">
+      <widget class="QRadioButton" name="radio_song">
+       <property name="text">
+        <string>Song</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1" colspan="2">
+      <widget class="QLineEdit" name="select_movie"/>
+     </item>
+     <item row="4" column="0">
+      <widget class="QRadioButton" name="radio_book">
+       <property name="text">
+        <string>Book</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLabel" name="label_artist_select">
+       <property name="text">
+        <string>Artist</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1" colspan="2">
+      <widget class="QLineEdit" name="select_song"/>
+     </item>
+     <item row="3" column="2">
+      <widget class="QLineEdit" name="select_artist"/>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLabel" name="label_author_select">
+       <property name="text">
+        <string>Author</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1" colspan="2">
+      <widget class="QLineEdit" name="select_book"/>
+     </item>
+     <item row="5" column="2">
+      <widget class="QLineEdit" name="select_author"/>
+     </item>
+     <item row="8" column="0" colspan="3">
+      <widget class="QPushButton" name="button_match">
+       <property name="text">
+        <string>Find Matches</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QRadioButton" name="radio_movie">
+       <property name="text">
+        <string>Movie</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QLineEdit" name="selectErr_movie"/>
+     </item>
+     <item row="1" column="3">
+      <widget class="QLineEdit" name="selectErr_song"/>
+     </item>
+     <item row="3" column="3">
+      <widget class="QLineEdit" name="selectErr_artist"/>
+     </item>
+     <item row="4" column="3">
+      <widget class="QLineEdit" name="selectErr_book"/>
+     </item>
+     <item row="5" column="3">
+      <widget class="QLineEdit" name="selectErr_author"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="addMedia">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>430</y>
+      <width>491</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Add New Media Match</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="5" column="2">
+      <widget class="QLineEdit" name="new_author"/>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_movie">
+       <property name="text">
+        <string>Movie</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QLineEdit" name="new_artist"/>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_book">
+       <property name="text">
+        <string>Book</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1" colspan="2">
+      <widget class="QLineEdit" name="new_song"/>
+     </item>
+     <item row="4" column="1" colspan="2">
+      <widget class="QLineEdit" name="new_book"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_song">
+       <property name="text">
+        <string>Song</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLabel" name="label_author">
+       <property name="text">
+        <string>Author</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLabel" name="label_artist">
+       <property name="text">
+        <string>Artist</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1" colspan="2">
+      <widget class="QLineEdit" name="new_movie"/>
+     </item>
+     <item row="6" column="0" colspan="3">
+      <widget class="QPushButton" name="button_submit">
+       <property name="text">
+        <string>Submit</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="QLineEdit" name="addErr_artist"/>
+     </item>
+     <item row="4" column="3">
+      <widget class="QLineEdit" name="addErr_book"/>
+     </item>
+     <item row="5" column="3">
+      <widget class="QLineEdit" name="addErr_author"/>
+     </item>
+     <item row="1" column="3">
+      <widget class="QLineEdit" name="addErr_song"/>
+     </item>
+     <item row="0" column="3">
+      <widget class="QLineEdit" name="addErr_movie"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="recMedia">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>230</y>
+      <width>491</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Match Recommendations</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="0" column="1" colspan="2">
+      <widget class="QLineEdit" name="rec_movie"/>
+     </item>
+     <item row="1" column="1" colspan="2">
+      <widget class="QLineEdit" name="rec_song"/>
+     </item>
+     <item row="3" column="2">
+      <widget class="QLineEdit" name="rec_artist"/>
+     </item>
+     <item row="5" column="2">
+      <widget class="QLineEdit" name="rec_author"/>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_movie_3">
+       <property name="text">
+        <string>Movie</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_book_3">
+       <property name="text">
+        <string>Book</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_song_3">
+       <property name="text">
+        <string>Song</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLabel" name="label_author_3">
+       <property name="text">
+        <string>Author</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1" colspan="2">
+      <widget class="QLineEdit" name="rec_book"/>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLabel" name="label_artist_3">
+       <property name="text">
+        <string>Artist</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
